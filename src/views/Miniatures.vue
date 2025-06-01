@@ -138,7 +138,7 @@
                       <input id="tag-input" v-model="tagInput" @keydown.enter.prevent="addTag" type="text"
                         class="input pr-10" placeholder="Add tag and press Enter" aria-label="Add new tag" />
                       <button type="button" @click="addTag"
-                        class="absolute right-1 top-1/2 -translate-y-1/2 text-gray-300 hover:border-0 hover:text-gray-600 hover:bg-gray-400"
+                        class="absolute right-1 top-1/2 -translate-y-1/2 text-gray-900 hover:border-0 hover:text-gray-600 hover:bg-gray-400"
                         aria-label="Add tag">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd"
