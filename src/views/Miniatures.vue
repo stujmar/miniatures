@@ -48,9 +48,10 @@
                 <div v-if="getMiniaturePaints(miniature).length > 0" class="flex flex-wrap gap-1">
                   <div v-for="paint in getMiniaturePaints(miniature)" :key="paint.id"
                     :style="{ backgroundColor: paint.color }" :title="`${paint.brand} - ${paint.name}`"
-                    class="w-6 h-6 rounded-full border border-gray-200 shadow-sm cursor-help transition-transform hover:scale-110 group relative">
+                    class="w-6 h-6 rounded-full border border-gray-200 shadow-sm cursor-help transition-transform hover:scale-110 relative">
                     <div
-                      class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity">
+                      class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 hover:opacity-100 pointer-events-none transition-opacity z-10"
+                      :class="{ 'opacity-100': hover === paint.id }">
                       {{ paint.brand }} - {{ paint.name }}
                     </div>
                   </div>
@@ -201,6 +202,7 @@ const editingMiniature = ref(null)
 const searchQuery = ref('')
 const selectedTag = ref('')
 const tagInput = ref('')
+const hover = ref(null)
 
 const form = ref({
   name: '',
@@ -279,3 +281,9 @@ function togglePaint(paintId) {
   }
 }
 </script>
+
+<style scoped>
+.rounded-full:hover>div {
+  opacity: 1;
+}
+</style>
