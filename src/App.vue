@@ -69,7 +69,9 @@ const importData = (event) => {
         <div class="flex justify-between h-16 w-full">
           <div class="flex w-full">
             <div class="flex-shrink-0 flex items-center">
-              <h1 class="text-xl font-bold text-gray-900 font-heading">Miniatures Catalog</h1>
+              <router-link to="/home" class="hover:opacity-80 transition-opacity">
+                <h1 class="text-xl font-bold text-gray-900 font-heading">Miniatures Catalog</h1>
+              </router-link>
             </div>
             <!-- Desktop Navigation -->
             <div class="hidden sm:ml-6 sm:flex sm:space-x-8 flex-1">
