@@ -6,7 +6,7 @@ const dummyData = {
         {
             id: 1,
             name: "Space Marine Captain",
-            image: "https://images.unsplash.com/photo-1600703136783-bdb5ea365239?w=400",
+            image: "https://media.miniaturemarket.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/l/nlmdh1009.jpg",
             notes: "Working on NMM gold trim and power sword effects",
             tags: ["Warhammer 40K", "Space Marines", "Character"],
             paints: [1, 2, 3],
